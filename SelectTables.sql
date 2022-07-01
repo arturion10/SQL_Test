@@ -1,3 +1,3 @@
-    select * from Products p
-    join ProdictCategory pc on p.Id = pc.ProductId
-    join Categories c on pc.CategoryId = c.Id
+    select * from Product p
+    left join ProductCategory pc on p.Id = pc.ProductId
+    left join Category c on pc.CategoryId = c.Id

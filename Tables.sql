@@ -1,12 +1,12 @@
-CREATE TABLE Products (
+CREATE TABLE Product (
       Id bigint NOT NULL PRIMARY KEY,
       Name varchar(255)
     );
-CREATE TABLE Categories (
+CREATE TABLE Category (
       Id bigint NOT NULL PRIMARY KEY,
       Name varchar(255)
     );
-CREATE TABLE ProdictCategory (
-      ProductId bigint REFERENCES Products(Id),
-      CategoryId bigint REFERENCES Categories (Id)
+CREATE TABLE ProductCategory (
+      ProductId bigint REFERENCES Product(Id),
+      CategoryId bigint REFERENCES Category(Id)
     );
